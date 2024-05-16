@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(32, 34, 37);
+}
+
+.container {
+  position: relative;
+  width: max-content;
+  margin: 150px auto;
+}
+
+#circle2,
+#circle3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#circle1 img {
+  max-width: 700px;
+  max-height: 700px;
+  animation: in 12s linear 0s infinite normal;
+}
+
+#circle2 img {
+  max-width: 500px;
+  max-height: 500px;
+  animation: in 14s linear 0s infinite normal;
+}
+
+#circle3 img {
+  max-width: 300px;
+  max-height: 300px;
+  animation: in 16s linear 0s infinite normal;
+}
+
+@keyframes in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
